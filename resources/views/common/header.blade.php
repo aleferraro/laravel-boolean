@@ -1,7 +1,9 @@
 <header>
     <div class="container">
         <div class="left-header">
-            <img src="img/logo.png" alt="logo">
+            <a href="/">
+                <img src="img/logo.png" alt="logo">
+            </a>
         </div>
         <div class="right-header">
             <ul class="menu">

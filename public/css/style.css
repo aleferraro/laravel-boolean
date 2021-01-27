@@ -7,11 +7,20 @@ a {
 .container {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 01rem;
     display: flex;
     justify-content: space-between  ;
 }
 
-.left-header > img {
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: #FFFFFF;
+}
+
+.left-header img {
     width: 200px;
 }
 
@@ -45,4 +54,23 @@ button.main-btn {
     border: 2px solid #0CD977;
     border-radius: 5px;
     padding: 0.5rem 1rem;   
+}
+
+main {
+    margin-top: 100px;
+    padding-top: 3rem;
+}
+
+main .container {
+    flex-wrap: wrap;
+}
+
+main .container .card {
+    flex-basis: 250px;
+    margin: 0.5rem;
+    padding: 1rem;
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
