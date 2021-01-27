@@ -14,6 +14,17 @@
     @include('common.header')
 
     @section('main')
+    <main class="provvisorio">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A sint at quia quas recusandae eligendi culpa placeat harum, eius quis consequatur provident nesciunt nisi dolor! Earum corporis harum amet. Iste.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A sint at quia quas recusandae eligendi culpa placeat harum, eius quis consequatur provident nesciunt nisi dolor! Earum corporis harum amet. Iste.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A sint at quia quas recusandae eligendi culpa placeat harum, eius quis consequatur provident nesciunt nisi dolor! Earum corporis harum amet. Iste.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A sint at quia quas recusandae eligendi culpa placeat harum, eius quis consequatur provident nesciunt nisi dolor! Earum corporis harum amet. Iste.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A sint at quia quas recusandae eligendi culpa placeat harum, eius quis consequatur provident nesciunt nisi dolor! Earum corporis harum amet. Iste.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A sint at quia quas recusandae eligendi culpa placeat harum, eius quis consequatur provident nesciunt nisi dolor! Earum corporis harum amet. Iste.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A sint at quia quas recusandae eligendi culpa placeat harum, eius quis consequatur provident nesciunt nisi dolor! Earum corporis harum amet. Iste.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A sint at quia quas recusandae eligendi culpa placeat harum, eius quis consequatur provident nesciunt nisi dolor! Earum corporis harum amet. Iste.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A sint at quia quas recusandae eligendi culpa placeat harum, eius quis consequatur provident nesciunt nisi dolor! Earum corporis harum amet. Iste.</p>
+    </main>
     @show
 
     @include('common.footer')

@@ -39,6 +39,10 @@ header {
     margin: 0 1rem;
 }
 
+.menu > li:hover {
+    text-decoration: underline;
+}
+
 .active {
     color: #0CD977;
     text-decoration: underline;
@@ -54,6 +58,12 @@ button.main-btn {
     border: 2px solid #0CD977;
     border-radius: 5px;
     padding: 0.5rem 1rem;   
+}
+
+button.main-btn:hover {
+    cursor: pointer;
+    background-color: #0CD977;
+    color: #FFFFFF;
 }
 
 main {
@@ -79,5 +89,10 @@ main .container .card {
 main .container .card > img {
     width: 200px;
     height: 200px;
+    margin: auto;
+}
+
+main.provvisorio {
+    width: 40%;
     margin: auto;
 }
