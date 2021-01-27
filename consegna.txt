@@ -1,0 +1,4 @@
+nome repo: laravel-boolean
+
+Prendendo spunto dal sito di Boolean ( https://www.boolean.careers/ ), ricreare un layout con la stessa struttura. Il layout di base deve contentere un header condiviso con tutte le pagine navigabili del sito ( create le stesse [Home, Corso, Dopo il ....] , ma mettete un lorem ipsum per riempirle per ora ) e deve essere possibile spostarsi da una pagina all'altra. Usate un file di configurazione per salvare l'informazione di quali pagine sono raggiungibili tramite la navbar dell'header, e generate i link dinamicamente usando quella configurazione. Accedete alla Request per aggiungere una classe 'active' all'elemento attualmente selezionato ( usate il messaggio sopra come riferimento ).
+Per chi volesse osare, puo' ovviamente usare CSS - ripasso! - per abbellire il tutto.
