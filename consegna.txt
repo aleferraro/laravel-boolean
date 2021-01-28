@@ -6,3 +6,31 @@ Per chi volesse osare, puo' ovviamente usare CSS - ripasso! - per abbellire il t
 -----------------------------------------------------------------
 
 Utilizzando sempre il repo laravel-boolean , aggiungete una rotta che mostra una pagina contentente una lista di utenti ( formattate la pagina come preferite, volendo nello stesso modo in cui abbiamo mostrato i dischi ). Questa pagina verra' popolata con dei dati prelevati da una tabella del vostro DB, di cui troverete i dettagli / comandi per la creazione nel file allegato ( abbiamo visto oggi in classe come creare una tabella da zero, ma con i comandi nel file allegato la tabella verra' inizializzata automaticamente ). Create e collegate il model alla tabella corretta del DB e usate ::all() per prelevare e usare i dati nella vista.
+
+-----------------------------------------------------------------
+
+Ciao ragazzi! L'esercizio di oggi e' diviso in due parti, ma da esegure sullo stesso repo laravel-boolean.
+
+Come prima cosa, cancellate tutte le migration preesistenti e create una migration in cui istruite Laravel a generare / distruggere la tabella users definita come
+
+create table users (
+	id INT,
+	first_name VARCHAR(50),
+	last_name VARCHAR(50),
+	email VARCHAR(50),
+	gender VARCHAR(50),
+	image VARCHAR(50)
+);
+
+come abbiamo visto oggi in classe; 
+molto probabilmente avrete gia nel vostro DB questa tabella, quindi - prima di avviare la migration con il comando opportuno - dovete cancellare la tabella esistente dal menu 'Operations-> DROP TABLE' di phpMyAdmin.  Questo vi fara' perdere tutti i dati, ma poco male, li reinseriamo. 
+Eseguite ora la migration e verificate che Laravel ha creato per voi quello che avete definito. 
+Per ripopolare la tabella appena creata con la migration, caricate tramite phpMyAdmin nuovamente i dati usando il file in allegato.
+
+Successivamente aggiorniamo il controller che gestisce questi utenti e definiamo una nuova rotta che:
+- preleva un parametro variabile da una porzione dell'URL che sara' identificatore per un singolo elemento nella tabella 'users'
+- passa il parametro al metodo 'show'
+- il metodo 'show' usa il modello creato per far comunicare Laravel con la tabella 'users' nel DB per prelevare il singolo 'user'
+- viene restituita una vista che usa le informazioni inerenti all'elemento prelevato dal DB
+
+Ovviamente dobbiamo aggiornare la vista associata alla rotta 'index', inserendo ad ogni elemento un link che richiami la rotta appena creata con il parametro impostato all'identificativo di ogni singolo elemento
